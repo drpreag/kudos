@@ -1,0 +1,17 @@
+{
+    "name": "drpreag/kudos",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Predrag Vlajkovic",
+            "email": "predrag.vlajkovic@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+    	"psr-4": {
+    		"KudosApp\\": "src"
+    	}
+    }
+
+}
