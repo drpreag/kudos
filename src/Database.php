@@ -13,20 +13,21 @@ class Database {
 	private static $_instance = null; 
 	private $_connection;
 
-	private $_host;
+	/*private $_host;
 	private $_username;
 	private $_password;
-	private $_database;	
+	private $_database;	*/
 
 	private function __construct() {
-		$this->_host = getenv("HOST");
-		$this->_username = getenv("USERNAME");
-		$this->_password = getenv("PASSWORD");
-		$this->_database = getenv("DATABASE");		
+		/*$this->_host = HOST;
+		$this->_username = USERNAME;
+		$this->_password = PASSWORD;
+		$this->_database = DATABASE;		*/
 
 		try {
-			$this->_connection = new \mysqli($this->_host, $this->_username, 
-				$this->_password, $this->_database);
+			$this->_connection = new \mysqli(HOST, USERNAME, PASSWORD, DATABASE);
+			//$this->_connection = new \mysqli($this->_host, $this->_username, 
+			//	$this->_password, $this->_database);			
 		}
 		catch (Exception $e) {
 	        echo "Exception error in Database class\n";

@@ -1,13 +1,7 @@
 <?php
 include "src/config.php";
 
-//API Url
-//$url = 'http://kudos.profidata/receive_json.php';
-$url = getenv("POSTURL");
-//echo "posturl:" . $url;
-//die();
-//Initiate cURL.
-$ch = curl_init($url);
+$ch = curl_init(POSTURL);
 
 //The JSON data.
 $jsonData = array(

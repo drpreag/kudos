@@ -1,10 +1,11 @@
 <?php
 namespace KudosApp;
 
-putenv ("HOST=localhost");
-putenv ("USERNAME=user");
-putenv ("PASSWORD=");
-putenv ("DATABASE=kudos");
+define("POSTURL", "http://localhost:8000/receive_json.php");
 
-putenv ('POSTURL="http://localhost:8000/receive_json.php"');
+define("HOST", "localhost");
+define("USERNAME", "user");
+define("PASSWORD", "");
+define("DATABASE", "kudos");
+
 ?>
