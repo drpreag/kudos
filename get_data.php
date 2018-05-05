@@ -15,8 +15,8 @@ $country = new Country;
 // /get_data.php?output=csv
 
 if ($_GET["output"]=='json') {
-	//$result = $country->getTopFiveCountriesPerEvent();
-	$result = $country->getTopFiveCountriesPerEvent_with_mysql_rank();
+	$result = $country->getTopFiveCountriesPerEvent();
+	//$result = $country->getTopFiveCountriesPerEvent_with_mysql_rank();
 
 	if ($result)
 	    print json_encode($result, JSON_PRETTY_PRINT);
