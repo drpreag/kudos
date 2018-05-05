@@ -1,4 +1,5 @@
 <?php
+
 namespace KudosApp;
 
 define("POSTURL", "http://localhost:8000/receive_json.php");

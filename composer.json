@@ -11,7 +11,9 @@
     "autoload" : {
     	"psr-4": {
     		"KudosApp\\": "src/"
-    	}
+    	},
+        "files" : 
+            ["src/config.php"]
     }
 
 }

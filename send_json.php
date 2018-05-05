@@ -1,5 +1,7 @@
 <?php
-include "src/config.php";
+
+namespace KudosApp;
+require 'vendor/autoload.php';
 
 $ch = curl_init(POSTURL);
 
