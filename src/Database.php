@@ -13,21 +13,9 @@ class Database {
 	private static $_instance = null; 
 	private $_connection;
 
-	/*private $_host;
-	private $_username;
-	private $_password;
-	private $_database;	*/
-
 	private function __construct() {
-		/*$this->_host = HOST;
-		$this->_username = USERNAME;
-		$this->_password = PASSWORD;
-		$this->_database = DATABASE;		*/
-
 		try {
-			$this->_connection = new \mysqli(HOST, USERNAME, PASSWORD, DATABASE);
-			//$this->_connection = new \mysqli($this->_host, $this->_username, 
-			//	$this->_password, $this->_database);			
+			$this->_connection = new \mysqli(HOST, USERNAME, PASSWORD, DATABASE);			
 		}
 		catch (Exception $e) {
 	        echo "Exception error in Database class\n";
