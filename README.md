@@ -11,12 +11,11 @@ Steps to run app
 	or 
 	trig Seed option from browser on page http://localhost:8000/
 		
-===================================================================
-===================================================================
+========================================================================================
 
 Test requirements:
 
-===================================================================
+===================================================================================
 
 Request 1. Receive data from application. The data is sent by POST. The data is formatted in json.
 The backend needs to decode this data and extract the "country" and "event" fields.
@@ -32,7 +31,7 @@ To get this results make a call:
 	Change JSON data (country name, and event name) in send_json.php to see how is everything 
 	processed and saved to database.
 
-===================================================================
+===================================================================================
 
 Request 2. The application does a GET request. Data should be returned in different formats (json,csv)
 according to the request parameters. The response should contain the sum of each event
